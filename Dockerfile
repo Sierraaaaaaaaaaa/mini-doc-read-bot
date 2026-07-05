@@ -9,8 +9,4 @@ COPY . .
 
 RUN mkdir -p /app/data
 
-# state.json lives in /app/data -- mount this as a volume in production
-# so delta detection works across container restarts (see README.md).
-VOLUME ["/app/data"]
-
 CMD ["python", "-m", "app.main"]

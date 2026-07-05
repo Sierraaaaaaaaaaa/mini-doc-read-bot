@@ -81,3 +81,8 @@ docker run --rm \
 ## Sample Run
 
 ![Sample Run](Sample%20run.png)
+![Sample Log](sample%20log.png)
+
+## Daily Jobs Log on Railway
+
+![Daily Jobs log on railway](Daily%20Jobs%20log%20on%20railway.png)

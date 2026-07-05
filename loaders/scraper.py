@@ -11,14 +11,14 @@ from model.article import Article
 import requests
 from pathlib import Path
 from markdownify import markdownify as md
+from config.settings import Settings
 
-DEFAULT_BASE_URL = "https://support.optisigns.com"
 
 class Scraper:
     """Pulls Help Center articles from a Zendesk-backed site and writes
     each one to disk as a clean Markdown file."""
 
-    def __init__(self, base_url: str = DEFAULT_BASE_URL, articles_dir: Optional[Path] = None):
+    def __init__(self, base_url: str = Settings.DEFAULT_BASE_URL, articles_dir: Optional[Path] = None):
         self.base_url = base_url.rstrip("/")
         self.articles_dir = articles_dir or Path(__file__).parent.parent / "data" / "articles"
 

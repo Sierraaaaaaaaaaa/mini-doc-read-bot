@@ -24,4 +24,4 @@ class Settings:
     OPENAI_TOP_P: float = float(os.getenv("OPENAI_TOP_P", 1.0))
     OPENAI_FREQUENCY_PENALTY: float = float(os.getenv("OPENAI_FREQUENCY_PENALTY", 0.0))
     OPENAI_PRESENCE_PENALTY: float = float(os.getenv("OPENAI_PRESENCE_PENALTY", 0.0))
-    BASE: str = os.getenv("BASE", "https://support.optisigns.com/hc/en-us")
+    DEFAULT_BASE_URL: str = os.getenv("DEFAULT_BASE_URL", "https://support.optisigns.com")

@@ -63,6 +63,7 @@ docker run --rm \
 1. **Scrape**: Fetches articles from a Zendesk-backed Help Center and converts their HTML bodies to clean Markdown.
 2. **Diff**: Compares the hashes of the downloaded articles against a local `state.json` to detect what has been added or updated since the last run.
 3. **Upload**: Uses the OpenAI API to upload the changed files to a Vector Store and chunks them for Assistant search functionality, then updates `state.json` with the new file IDs.
+4. **Chunking strategy**: This project uses the static chunking with 1000 token in chunk size and 200 token overlap
 
 
 ## How to start asking
@@ -81,6 +82,9 @@ docker run --rm \
 ## Sample Run
 
 ![Sample Run](Sample%20run.png)
+
+## Sample Log
+
 ![Sample Log](sample%20log.png)
 
 ## Daily Jobs Log on Railway

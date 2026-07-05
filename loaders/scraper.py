@@ -68,7 +68,7 @@ class Scraper:
             if url:
                 time.sleep(0.25)  
 
-        return articles
+        return articles[:31] if len(articles) > 31 else articles
 
     @classmethod
     def build_markdown_file(cls, article: dict) -> tuple[str, str, str]:

@@ -1,0 +1,5 @@
+requests
+markdownify
+pydantic
+openai
+python-dotenv

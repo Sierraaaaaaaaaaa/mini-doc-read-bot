@@ -13,4 +13,4 @@ RUN mkdir -p /app/data
 # so delta detection works across container restarts (see README.md).
 VOLUME ["/app/data"]
 
-CMD ["python", "main.py"]
+CMD ["python", "-m", "app.main"]
